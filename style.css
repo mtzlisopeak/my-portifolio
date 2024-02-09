@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    filter: saturate(102%);
+    text-decoration: none;
+}
+
+@keyframes mudarCor {
+    0% {
+        color: #466bff;
+    }
+
+    50% {
+        color: orangered;
+    }
+
+    75% {
+        color: violet;
+    }
+
+    100% {
+        color: #466bff;
+    }
+}
+
+@keyframes rgb {
+    0% {
+        background-position: -300%;
+    }
+
+    50% {
+        background-position: -200%;
+    }
+
+    100% {
+        background-position: -300%;
+    }
+
+}
+
+body {
+    min-height: 100vh;
+    background: url(img/wallpaper.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 10vh 20vh 10vh;
+}
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2vh 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 3.2vh;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    animation: mudarCor 3.5s linear infinite;
+}
+
+#nav a {
+    font-size: 1.8vh;
+    color: whitesmoke;
+    margin-left: 2vh;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1vh;
+    border-radius: 1vh;
+    transition: ease 0.3s;
+}
+
+#nav a:hover {
+    background-color: #466bff;
+}
+
+#whats {
+    display: flex;
+    background: rgb(2, 220, 2);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#whats:hover {
+    scale: 1.2;
+}
+
+#whats ion-icon {
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+#section1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    padding: 30.5vh 0;
+}
+
+#section1 img {
+    position: relative;
+    max-width: 30vh;
+    background-color: transparent;
+    filter: drop-shadow(15px 10px 20px #0000009c);
+}
+
+#section1 h2 {
+    max-width: 40vh;
+    color: whitesmoke;
+}
+
+#section1 h2 span {
+    color: orangered;
+}
+
+#section2 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 3vh;
+    background-color: rgba(240, 248, 255, 0.097);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#section2 h1 {
+    font-size: 4vh;
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
+
+#habilidades div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    max-width: 30vh;
+}
+
+#habilidades div img {
+    max-width: 20vh;
+}
+
+#habilidades div ion-icon {
+    font-size: 15vh;
+}
+
+#ht {
+    display: flex; 
+}
+
+#ht div {
+    display: flex;
+    flex-direction: row;
+}
+
+#habilidades div h2 {
+    font-size: 1.8vh;
+    font-weight: 300;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 15vh 0;
+    align-items: center;
+    text-align: center;
+}
+
+#section3 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vh;
+}
+
+#section3 div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(245, 245, 245, 0.171);
+    border-radius: 2vh;
+    padding: 4vh;
+    gap: 2vh;
+}
+
+#section3 div div h2 {
+    font-size: 2vh;
+    color: whitesmoke;
+    max-width: 25vh;
+}
+
+#section3 div div a {
+    color: whitesmoke;
+    font-size: 2vh;
+    font-weight:500;
+    border-radius: 1.5vh;
+    padding: 1vh;
+    background-color: #335cff;
+    width: 15vh;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#section3 div div a:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#section3 div div span {
+    color: orangered;
+    font-weight: 900;
+}
+
+#section3 div div ion-icon {
+    color: whitesmoke;
+    font-size: 6vh;
+}
+
+#section3 h1 {
+    font-size: 5vh;
+    font-weight: 900;
+    color: transparent;
+    background-image: linear-gradient(to left, #466bff, deeppink, orangered);
+    background-clip: text;
+    background-size: 300%;
+    animation: rgb 4s linear infinite;
+}
+
+#section4 {
+    width: 100%;
+    padding: 2vh;
+    background-color: #466bff38;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#section4 h2 {
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 2vh;
+}
