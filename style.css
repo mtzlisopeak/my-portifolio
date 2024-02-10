@@ -256,7 +256,7 @@ body {
     background: linear-gradient(to left, #466bff, deeppink, orangered);
     background-clip: text;
     background-size: 300%;
-    /*animation: rgb 4s linear infinite;*/
+    animation: rgb 4s linear infinite;
 }
 
 #section4 {
