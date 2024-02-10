@@ -111,7 +111,6 @@ body {
 #section1 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -127,7 +126,8 @@ body {
 }
 
 #section1 h2 {
-    max-width: 50vh;
+    max-width: 60vh;
+    font-size: 3vh;
     color: whitesmoke;
 }
 
@@ -253,10 +253,10 @@ body {
     font-size: 5vh;
     font-weight: 900;
     color: transparent;
-    background-image: linear-gradient(to left, #466bff, deeppink, orangered);
+    background: linear-gradient(to left, #466bff, deeppink, orangered);
     background-clip: text;
     background-size: 300%;
-    animation: rgb 4s linear infinite;
+    /*animation: rgb 4s linear infinite;*/
 }
 
 #section4 {
