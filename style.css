@@ -10,35 +10,20 @@
 
 @keyframes mudarCor {
     0% {
-        color: #466bff;
+        color: #ff42b3;
     }
 
     50% {
-        color: orangered;
+        color: #cd5ffc;
     }
 
     75% {
-        color: violet;
+        color: #5e95e6;
     }
 
     100% {
-        color: #466bff;
+        color: #ff42b3;
     }
-}
-
-@keyframes rgb {
-    0% {
-        background-position: -300%;
-    }
-
-    50% {
-        background-position: -200%;
-    }
-
-    100% {
-        background-position: -300%;
-    }
-
 }
 
 body {
@@ -46,20 +31,16 @@ body {
     background: url(img/wallpaper.png) no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 5vh;
+}
+
+main {
+    padding: 0 5vh;
 }
 
 #header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2vh 0;
-    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    padding: 2vh 5vh;
 }
 
 #logo {
@@ -92,14 +73,14 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 6vh;
-    height: 6vh;
+    width: 5vh;
+    height: 5vh;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
 #whats:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 #whats ion-icon {
@@ -113,25 +94,25 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10vh;
-    padding: 30.5vh 0;
+    min-height: 90vh;
 }
 
 #section1 img {
     position: relative;
-    max-width: 30vh;
+    min-width: 10vh;
+    max-width: 35vh;
     background-color: transparent;
     filter: drop-shadow(15px 10px 20px #0000009c);
 }
 
 #section1 h2 {
     max-width: 60vh;
-    font-size: 3vh;
+    font-size: clamp(1.5vh, 3vh, 3.5vh);
     color: whitesmoke;
 }
 
 #section1 h2 span {
-    color: orangered;
+    color: #335cff;
 }
 
 #section2 {
@@ -139,37 +120,42 @@ body {
     text-align: center;
     padding: 3vh;
     background-color: rgba(240, 248, 255, 0.097);
-    border-radius: 2vh;
+    border-radius: 5vh;
     display: flex;
     flex-direction: column;
 }
 
 #section2 h1 {
-    font-size: 4vh;
+    font-weight: 900;
+    font-size: clamp(1.5vh, 3.5vh, 4.5vh);
 }
 
 #habilidades {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 5vh;
+    gap: 2vh;
 }
 
-#habilidades div {
+#habilidades div { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3vh;
-    max-width: 30vh;
+    max-width: 25vh;
+    gap: 2vh;
 }
 
 #habilidades div img {
-    max-width: 20vh;
+    width: 100%;
+    max-width: 10vh;
+    height: auto;
 }
 
 #habilidades div ion-icon {
-    font-size: 15vh;
+    font-size: clamp(4vh, 6vh, 6.5vh);
 }
 
 #ht {
@@ -181,9 +167,13 @@ body {
     flex-direction: row;
 }
 
+#ht div ion-icon {
+    font-size: clamp(4vh, 6vh, 6.5vh);
+}
+
 #habilidades div h2 {
     font-size: 1.8vh;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #section3 {
@@ -193,6 +183,12 @@ body {
     padding: 15vh 0;
     align-items: center;
     text-align: center;
+}
+
+#section3 h1 {
+    font-size: 5vh;
+    font-weight: 900;
+    color: whitesmoke;
 }
 
 #section3 div {
@@ -248,27 +244,18 @@ body {
     font-size: 6vh;
 }
 
-#section3 h1 {
-    font-size: 5vh;
-    font-weight: 900;
-    color: transparent;
-    background: linear-gradient(to left, #466bff, deeppink, orangered);
-    background-clip: text;
-    background-size: 300%;
-    animation: rgb 4s linear infinite;
-}
-
-#section4 {
+#footer {
+    margin: 0;
+    padding: 0;
+    background-color: #335cff44;
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: relative;
+    padding: 2vh;
 }
 
-#section4 h2 {
+#footer h2 {
+    font-weight: 400;
     color: whitesmoke;
-    font-weight: 500;
-    font-size: 2vh;
+    font-size: clamp(1vh, 1.5vh, 2.5vh);
 }
